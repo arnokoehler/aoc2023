@@ -9,7 +9,7 @@ class DayFourTest {
 
     @Test
     fun `should score cards and calculate`() {
-        val actual = DayFour().getScore(FileUtils.getLines("day-four-training-set.txt"))
-        assertEquals(13, actual)
+        val cards = DayFour().getList(FileUtils.getLines("day-four-training-set.txt"))
+        assertEquals(13, cards.sumOf { it.score })
     }
 }

@@ -16,23 +16,21 @@ class DayFour {
         }
     }
 
-    fun getScore(input: List<String>): Int {
-        val list = getList(input)
-        return list.map { it.getScore() }.sum()
-    }
-
 }
 
 
 class Card(val Name: String, val winningNumbers: List<Int>, val yourNumbers: List<Int>) {
-    fun getScore(): Int = getNumberOfMatchingNumbers().calculateScore()
+
+    val score: Int
+        get() = calculateScore(getNumberOfMatchingNumbers())
 
     private fun getNumberOfMatchingNumbers() = winningNumbers.intersect(yourNumbers).count()
+
+    private fun calculateScore(i: Int): Int = when (i) {
+        0 -> 0
+        1 -> 1
+        else -> 1 * 2.0.pow(i - 1).toInt()
+    }
 }
 
 fun String.toNumbers() = this.split(" ").filter { it.isNotEmpty() }.map { it.toInt() }
-
-fun Int.calculateScore(): Int = when (this) {
-    1 -> 1
-    else -> this * 2
-}
