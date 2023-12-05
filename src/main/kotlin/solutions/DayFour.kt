@@ -29,8 +29,13 @@ class Card(val Name: String, val winningNumbers: List<Int>, val yourNumbers: Lis
     private fun calculateScore(i: Int): Int = when (i) {
         0 -> 0
         1 -> 1
-        else -> 1 * 2.0.pow(i - 1).toInt()
+        else -> 2.0.pow(i - 1).toInt()
     }
+}
+
+class DayTwoCard(val Name: String, val winningNumbers: List<Int>, val yourNumbers: List<Int>) {
+    val matches: Int get() = winningNumbers.intersect(yourNumbers.toSet()).count()
+
 }
 
 fun String.toNumbers() = this.split(" ").filter { it.isNotEmpty() }.map { it.toInt() }
