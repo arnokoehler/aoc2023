@@ -1,5 +1,7 @@
 package nl.arnokoel
+
 class FileUtils {
+
     companion object {
         fun getLines(s: String): List<String> {
             val textFromFile = this.getTextFromFile(s)

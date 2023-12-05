@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteRepositoriesConfiguration">
+    <remote-repository>
+      <option name="id" value="gitlab.com" />
+      <option name="name" value="gitlab.com" />
+      <option name="url" value="https://gitlab.com/api/v4/groups/12464817/-/packages/maven" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="RedHat-GA" />
+      <option name="name" value="RedHat-GA" />
+      <option name="url" value="http://lx0269.intra.schiphol.nl:8081/nexus/content/repositories/RedHat-GA" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="OSE-API-Releases" />
+      <option name="name" value="OSE-API-Releases" />
+      <option name="url" value="http://lx0269.intra.schiphol.nl:8081/nexus/content/repositories/OSE-API-Releases/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="repo.fusesourcesource.com" />
+      <option name="name" value="RedHat Fuse" />
+      <option name="url" value="https://repo.fusesource.com/nexus/content/groups/public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Maven Central repository" />
+      <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss.community" />
+      <option name="name" value="JBoss Community repository" />
+      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven.repository.redhat.com" />
+      <option name="name" value="RedHat General Availability" />
+      <option name="url" value="https://maven.repository.redhat.com/ga" />
+    </remote-repository>
+  </component>
+</project>

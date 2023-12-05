@@ -2,8 +2,8 @@ package solutions
 
 import nl.arnokoel.solutions.DayOne
 import nl.arnokoel.FileUtils.Companion.getLines
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
-import kotlin.test.assertEquals
 
 class DayOneTest {
 

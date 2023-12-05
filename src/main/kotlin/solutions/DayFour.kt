@@ -25,9 +25,14 @@ class DayFour {
 
 
 class Card(val Name: String, val winningNumbers: List<Int>, val yourNumbers: List<Int>) {
-    fun getScore(): Int = getNumberOfMatchingNumbers().toDouble().pow(2).toInt()
+    fun getScore(): Int = getNumberOfMatchingNumbers().calculateScore()
 
     private fun getNumberOfMatchingNumbers() = winningNumbers.intersect(yourNumbers).count()
 }
 
-fun String.toNumbers() = this.split(" ").filter{ it.isNotEmpty() }.map { it.toInt() }
+fun String.toNumbers() = this.split(" ").filter { it.isNotEmpty() }.map { it.toInt() }
+
+fun Int.calculateScore(): Int = when (this) {
+    1 -> 1
+    else -> this * 2
+}
