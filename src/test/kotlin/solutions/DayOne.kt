@@ -9,13 +9,12 @@ class DayOneTest {
 
     @Test
     fun `Valide test set`() {
-        val lines = getLines("day-one-training-set.txt")
-        val dayOne = DayOne(lines)
+        val dayOne = DayOne(getLines("day-one-training-set.txt"))
 
-        assertEquals(12, dayOne.calculateCalibrationValue(lines[0]))
-        assertEquals(38, dayOne.calculateCalibrationValue(lines[1]))
-        assertEquals(15, dayOne.calculateCalibrationValue(lines[2]))
-        assertEquals(77, dayOne.calculateCalibrationValue(lines[3]))
+        assertEquals(12, dayOne.calculateCalibrationValue(getLines("day-one-training-set.txt")[0]))
+        assertEquals(38, dayOne.calculateCalibrationValue(getLines("day-one-training-set.txt")[1]))
+        assertEquals(15, dayOne.calculateCalibrationValue(getLines("day-one-training-set.txt")[2]))
+        assertEquals(77, dayOne.calculateCalibrationValue(getLines("day-one-training-set.txt")[3]))
         assertEquals(142, dayOne.calculateCalibrationValueForDocument())
     }
 

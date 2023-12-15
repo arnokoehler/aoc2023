@@ -12,4 +12,10 @@ class DayFourTest {
         val cards = DayFour().getList(FileUtils.getLines("day-four-training-set.txt"))
         assertEquals(13, cards.sumOf { it.score })
     }
+
+    @Test
+    fun `should score second day method`() {
+        val score = DayFour().getListDayTwo(FileUtils.getLines("day-four-secnd-training-set.txt"))
+        assertEquals(30, score)
+    }
 }
